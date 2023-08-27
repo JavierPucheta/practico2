@@ -12,11 +12,11 @@ let contenedorNombre = document.querySelector("#nomJugador");
 let contenedorEleccionUsuario = document.querySelector("#eleccion-usuario");
 let contenedorEleccionPC = document.querySelector("#eleccion-computadora");
 
-let nombre = prompt("Nombre del Jugador: ");
+let nombre = window.prompt("Nombre del Jugador: ");
 // mensaje en pantalla para ingresar nombre
 while(nombre === ""){
     alert("Debe seleccionar un nombre para empezar!");
-    nombre = prompt("Nombre del Jugador: ");
+    nombre = window.prompt("Nombre del Jugador: ");
 }
 
 contenedorNombre.innerText = nombre;
