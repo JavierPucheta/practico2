@@ -7,10 +7,18 @@ let contenedorPuntosPC = document.querySelector("#puntos-computadora");
 let mensaje = document.querySelector("#mensaje");
 let contenedorGanaPunto = document.querySelector("#gana-punto");
 let elegiTuArma = document.querySelector("#elegi-tu-arma");
+let contenedorNombre = document.querySelector("#nomJugador");
 
 let contenedorEleccionUsuario = document.querySelector("#eleccion-usuario");
 let contenedorEleccionPC = document.querySelector("#eleccion-computadora");
 
+let nombre = prompt("Nombre del Jugador: ");
+while(nombre === ""){
+    alert("Debe seleccionar un nombre para empezar!");
+    nombre = prompt("Nombre del Jugador: ");
+}
+
+contenedorNombre.innerText = nombre;
 let botonesArmas = document.querySelectorAll(".arma");
 botonesArmas.forEach(boton => {
     boton.addEventListener("click", iniciarTurno);

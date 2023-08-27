@@ -117,7 +117,7 @@ main {
 .btn {
     border: 0;
     line-height: 1;
-    background-color: var(--clr-lightblue);
+    background-color: var(--clr-gold);
     color: var(--clr-green);
     font-size: 1rem;
     padding: .5rem;
